@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GAMEVERSE | Biblioteca Gamer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Orbitron:wght@600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <a href="#inicio" class="logo">GAME<span>VERSE</span></a>
+  <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false"><i></i><i></i><i></i></button>
+  <nav class="nav" id="nav">
+    <a href="#inicio">Início</a><a href="#biblioteca">Biblioteca</a><a href="#biblioteca">Avaliações</a><a href="#comunidade">Comunidade</a>
+    <button class="btn-theme" id="themeBtn">Tema</button>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="hero-in">
+    <h1>EXPLORE OS GRANDES LANÇAMENTOS</h1>
+    <p>Descubra histórias, universos e experiências que definem uma nova geração de jogos.</p>
+    <a href="#biblioteca" class="btn">EXPLORAR BIBLIOTECA</a>
+  </div>
+</section>
+
+<section class="section" id="biblioteca">
+  <h2>BIBLIOTECA</h2>
+  <div class="tools">
+    <input type="search" id="search" placeholder="Pesquisar jogo pelo nome..." aria-label="Pesquisar jogos">
+    <div class="filters" id="filters">
+      <button class="chip active" data-g="todos">Todos</button>
+      <button class="chip" data-g="acao">Ação</button>
+      <button class="chip" data-g="aventura">Aventura</button>
+      <button class="chip" data-g="mundo-aberto">Mundo aberto</button>
+      <button class="chip" data-g="terror">Terror</button>
+      <button class="chip" data-g="rpg">RPG</button>
+      <button class="chip" data-g="ficcao">Ficção científica</button>
+    </div>
+  </div>
+
+  <div class="grid" id="grid">
+
+    <!-- ===== JOGO 1: GTA VI ===== -->
+    <article class="card reveal" data-id="gta6" data-name="Grand Theft Auto VI" data-genres="acao aventura mundo-aberto">
+      <div class="media" data-label="GTA VI">
+        <!-- IMAGEM 1 GTA 6: CAPA (troque o nome do arquivo no src abaixo) -->
+        <img class="img-a" src="site gameserver.jpg" alt="site gameserver" loading="lazy">
+        <!-- IMAGEM 2 GTA 6: GAMEPLAY (troque o nome do arquivo no src abaixo) -->
+        <img class="img-b" src="site gameserver gta.jpg" alt="site gameserver gta" loading="lazy">
+      </div>
+      <div class="body">
+        <h3>Grand Theft Auto VI</h3>
+        <p class="meta">Ação / Mundo aberto · Rockstar Games · 2026*</p>
+        <p class="syn">Crime, ambição e lealdade no estado fictício de Leonida, com a dupla Lucia e Jason.</p>
+        <div class="avg"></div><div class="rate"></div>
+        <button class="btn sm details">Ver detalhes</button>
+      </div>
+    </article>
+
+    <!-- ===== JOGO 2: ZELDA OCARINA REMAKE ===== -->
+    <article class="card reveal" data-id="zelda" data-name="The Legend of Zelda: Ocarina of Time Remake" data-genres="acao aventura">
+      <div class="media" data-label="Zelda OoT Remake">
+        <!-- IMAGEM 1 ZELDA REMAKE: CAPA (troque o nome do arquivo no src abaixo) -->
+        <img class="img-a" src="zelda 1.jpg" alt="zelda1" loading="lazy">
+        <!-- IMAGEM 2 ZELDA REMAKE: GAMEPLAY (troque o nome do arquivo no src abaixo) -->
+        <img class="img-b" src="zelda2.jpg" alt="zelda2" loading="lazy">
+      </div>
+      <div class="body">
+        <h3>The Legend of Zelda: Ocarina of Time Remake</h3>
+        <p class="meta">Ação / Aventura · Nintendo (placeholder) · A definir*</p>
+        <p class="syn">Um jovem de Hyrule parte numa jornada pelo tempo para impedir que a escuridão domine o reino.</p>
+        <div class="avg"></div><div class="rate"></div>
+        <button class="btn sm details">Ver detalhes</button>
+      </div>
+    </article>
+
+    <!-- ===== JOGO 3: WOLVERINE ===== -->
+    <article class="card reveal" data-id="wolverine" data-name="Marvel's Wolverine" data-genres="acao aventura">
+      <div class="media" data-label="Marvel's Wolverine">
+        <!-- IMAGEM 1 WOLVERINE: CAPA (troque o nome do arquivo no src abaixo) -->
+        <img class="img-a" src="marvel1.jpg" alt="marvel1" loading="lazy">
+        <!-- IMAGEM 2 WOLVERINE: GAMEPLAY (troque o nome do arquivo no src abaixo) -->
+        <img class="img-b" src="marvel2.jpg" alt="marvel2" loading="lazy">
+      </div>
+      <div class="body">
+        <h3>Marvel's Wolverine</h3>
+        <p class="meta">Ação / Aventura · Insomniac Games · 2026*</p>
+        <p class="syn">Logan segue pistas do próprio passado numa aventura brutal e narrativa, de ação em terceira pessoa.</p>
+        <div class="avg"></div><div class="rate"></div>
+        <button class="btn sm details">Ver detalhes</button>
+      </div>
+    </article>
+
+    <!-- ===== JOGO 4: DEATH STRANDING 2 ===== -->
+    <article class="card reveal" data-id="ds2" data-name="Death Stranding 2: On The Beach" data-genres="acao mundo-aberto ficcao">
+      <div class="media" data-label="Death Stranding 2">
+        <!-- IMAGEM 1 DEATH STRANDING 2: CAPA (troque o nome do arquivo no src abaixo) -->
+        <img class="img-a" src="death1.jpg" alt="death1" loading="lazy">
+        <!-- IMAGEM 2 DEATH STRANDING 2: GAMEPLAY (troque o nome do arquivo no src abaixo) -->
+        <img class="img-b" src="death2.jpg" alt="death2" loading="lazy">
+      </div>
+      <div class="body">
+        <h3>Death Stranding 2: On The Beach</h3>
+        <p class="meta">Ação / Ficção científica · Kojima Productions · 2025*</p>
+        <p class="syn">Sam retoma a missão de reconectar um mundo fragmentado, agora além das fronteiras conhecidas.</p>
+        <div class="avg"></div><div class="rate"></div>
+        <button class="btn sm details">Ver detalhes</button>
+      </div>
+    </article>
+
+    <!-- ===== JOGO 5: RESIDENT EVIL REQUIEM ===== -->
+    <article class="card reveal" data-id="re" data-name="Resident Evil Requiem" data-genres="terror acao">
+      <div class="media" data-label="Resident Evil Requiem">
+        <!-- IMAGEM 1 RESIDENT EVIL: CAPA (troque o nome do arquivo no src abaixo) -->
+        <img class="img-a" src="requiem1.jpg" alt="requiem1" loading="lazy">
+        <!-- IMAGEM 2 RESIDENT EVIL: GAMEPLAY (troque o nome do arquivo no src abaixo) -->
+        <img class="img-b" src="requiem2.jpg" alt="requiem2" loading="lazy">
+      </div>
+      <div class="body">
+        <h3>Resident Evil Requiem</h3>
+        <p class="meta">Terror / Ação · Capcom · 2026*</p>
+        <p class="syn">Sobrevivência e tensão em mais um capítulo da saga, com Grace Ashcroft e Leon S. Kennedy.</p>
+        <div class="avg"></div><div class="rate"></div>
+        <button class="btn sm details">Ver detalhes</button>
+      </div>
+    </article>
+
+    <!-- ===== JOGO 6: CRIMSON DESERT ===== -->
+    <article class="card reveal" data-id="crimson" data-name="Crimson Desert" data-genres="acao aventura mundo-aberto rpg">
+      <div class="media" data-label="Crimson Desert">
+        <!-- IMAGEM 1 CRIMSON DESERT: CAPA (troque o nome do arquivo no src abaixo) -->
+        <img class="img-a" src="desert1.jpg" alt="desert1 loading="lazy">
+        <!-- IMAGEM 2 CRIMSON DESERT: GAMEPLAY (troque o nome do arquivo no src abaixo) -->
+        <img class="img-b" src="desert2.jpg" alt="desert2" loading="lazy">
+      </div>
+      <div class="body">
+        <h3>Crimson Desert</h3>
+        <p class="meta">RPG / Mundo aberto · Pearl Abyss · 2026*</p>
+        <p class="syn">Mercenário em busca de sobrevivência num vasto continente em guerra, o reino de Pywel.</p>
+        <div class="avg"></div><div class="rate"></div>
+        <button class="btn sm details">Ver detalhes</button>
+      </div>
+    </article>
+
+  </div>
+  <p class="empty" id="empty" hidden>Nenhum jogo encontrado.</p>
+  <p class="note">* Anos e plataformas podem mudar: confirme sempre nos canais oficiais. Dados marcados como placeholder são fictícios.</p>
+</section>
+
+<section class="section" id="comunidade">
+  <h2>COMUNIDADE GAMEVERSE</h2>
+  <form id="cform" class="cform" autocomplete="off">
+    <input id="cuser" maxlength="30" placeholder="Nome de usuário" required>
+    <textarea id="cmsg" rows="3" maxlength="500" placeholder="Escreva sua mensagem..." required></textarea>
+    <button class="btn" type="submit">Publicar</button>
+  </form>
+  <div id="clist" class="clist"></div>
+</section>
+</main>
+
+<footer class="footer">
+  <a href="#inicio" class="logo">GAME<span>VERSE</span></a>
+  <p>Sua biblioteca definitiva de experiências gamer.</p>
+  <nav><a href="#inicio">Início</a><a href="#biblioteca">Biblioteca</a><a href="#biblioteca">Avaliações</a><a href="#comunidade">Comunidade</a></nav>
+  <small>© <span id="year"></span> GAMEVERSE. Todos os direitos reservados. Projeto independente, sem vínculo com as marcas citadas.</small>
+</footer>
+
+<div class="modal" id="modal" hidden aria-modal="true" role="dialog">
+  <div class="modal-box">
+    <button class="close" id="mclose" aria-label="Fechar">&times;</button>
+    <div id="mcontent"></div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
